@@ -12,9 +12,28 @@ type Inputs = {
 type Props = {};
 
 function Contact({}: Props) {
-  const { register, handleSubmit } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href = `mailto:ssatendra790@gmail.com?subject=${formData.subject}&body= Hi,my name is ${formData.name},${formData.message}(${formData.email})`;
+  const { register, handleSubmit, reset } = useForm<Inputs>();
+
+  const onSubmit: SubmitHandler<Inputs> = async (formData) => {
+    try {
+      const response = await fetch('api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('Message sent successfully!');
+        reset();
+      } else {
+        alert('Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert('An error occurred. Please try again later.');
+    }
   };
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
