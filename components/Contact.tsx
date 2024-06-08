@@ -46,11 +46,6 @@ function Contact({}: Props) {
 
         <div className="space-y-2 pt-8">
           <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <p className="text-base font-serif">+919755293141</p>
-          </div>
-
-          <div className="flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
             <p className="text-base font-serif">anuragmishra0521@gmail.com</p>
           </div>
