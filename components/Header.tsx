@@ -22,9 +22,7 @@ function Header({ }: Props) {
           duration: 1.5,
         }} className="flex flex-row items-center">
         <SocialIcon url="https://www.linkedin.com/in/17AnuragMishra/" fgColor='gray' bgColor='transparent' target='_blank'/>
-        <SocialIcon url="https://www.instagram.com/anuragmishra_17/" fgColor='gray' bgColor='transparent' target='_blank'/>
-        <SocialIcon url="https://github.com/17AnuragMishra" fgColor='gray' bgColor='transparent' target='_blank'/>
-        <SocialIcon url="https://leetcode.com/17AnuragMishra/" fgColor='gray' bgColor='transparent' target='_blank'/>
+        <SocialIcon url="https://github.com/17AnuragMishra" fgColor='gray' bgColor='transparent' target='_blank'/>\
       </motion.div>
         <motion.div
           initial={{
