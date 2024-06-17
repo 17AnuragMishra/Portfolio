@@ -6,6 +6,7 @@ import PokemonApp from '../Assets/pokemon.png';
 import Saor from '../Assets/SAOR.png';
 import LaunchIcon from '@mui/icons-material/Launch';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import Extension from '../Assets/extension.png';
 
 
 type Props = {};
@@ -26,6 +27,14 @@ function Projects({}: Props) {
   const projects: Project[] = [
     {
       id: 1,
+      imageSrc:{src: Extension.src},
+      title: 'Tabs Reminder Extension',
+      description: 'Tabs Reminder is a browser extension designed to help users manage and organize their open tabs effectively by providing a reminder feature. It allows users to save tab details along with links and set reminders to complete tasks associated with each tab',
+      visit: '#',
+      github: 'https://github.com/17AnuragMishra/Tabs-Reminder-Extension',
+    },
+    {
+      id: 2,
       imageSrc:{src: Inntrack.src},
       title: 'Inntrack',
       description: 'Inntrack(Under-Development): Aim to provide real-time tracking system for delivery on Map, This enables user to track there courier on map irrespective of the platform such as Flipkart, Amazon, Snapdeal.',
@@ -33,7 +42,7 @@ function Projects({}: Props) {
       github: 'https://github.com/17AnuragMishra/innTrack-',
     },
     {
-      id: 2,
+      id: 3,
       imageSrc:{src: PokemonApp.src},
       title: 'Pokemon App(Game)',
       description: "This Web Application is based on virtual world and characters bought from cartoon name Pokémon. It provides user to know the ability of their favorite character by entering the name. This uses freecodecamp pokemon-Api to fetch the details to the frontend, for me visit the source code-",
@@ -41,7 +50,7 @@ function Projects({}: Props) {
       github: 'https://github.com/17AnuragMishra/Pokemon-Search-App',
     },
     {
-      id: 3,
+      id: 4,
       imageSrc:{src: Saor.src},
       title: 'Sentiment Analysis of Reviews',
       description: 'In this project we have done the sentiment analysis of restaurant reviews with the help Of Machine Learning using an open source dataset of csv file. To run this project just copy past the code from the source on the Google Colab.',
