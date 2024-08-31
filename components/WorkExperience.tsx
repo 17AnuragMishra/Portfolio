@@ -6,6 +6,10 @@ import eduNet from '../Assets/eduNet.png';
 import Python from '../Assets/pythonLogo.png';
 import TensorFlow from '../Assets/tensorFlow.png';
 import GenAILogo from '../Assets/genLogo.png';
+import JavaScript from '../Assets/JavaScript-logo.png';
+import Sql from '../Assets/Sql.jpg';
+import Express from '../Assets/NodeJs.jpg';
+import Apis from '../Assets/Apis.png';
 
 type Props = {};
 
@@ -36,6 +40,19 @@ function WorkExperience({}: Props) {
       'Trained model got the accuracy of 76%, which was later improved further using Random forest classifier.',
     ],
   };
+  const experience3= {
+    title: 'Backend Developer',
+    company: 'Doss',
+    images: [],
+    techStackLogos: [Sql, Express, Apis, JavaScript],
+    startDate: 'May 2023',
+    endDate: 'Aug 2023',
+    description: [
+      'Collaborated with the team to optimize the website\'s performance, resulting in a 55% monthly growth.',
+      'Improved server response time by optimizing server-side code and database queries.',
+      'Gained hands-on experience with tech stacks including SQL, Express JS, JavaScript, and APIs.'
+    ],
+  };
 
   return (
     <motion.div
@@ -48,6 +65,7 @@ function WorkExperience({}: Props) {
       <div className='w-full flex space-x-5 overflow-x-scroll p-5 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
         <ExperienceCard {...experience1} />
         <ExperienceCard {...experience2} />
+        <ExperienceCard {...experience3} />
       </div>
     </motion.div>
   );
