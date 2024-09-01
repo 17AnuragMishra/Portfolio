@@ -31,32 +31,19 @@ function WorkExperience({}: Props) {
       'Compared to the previous result, I achieved the highest accuracy among all interns with a 92% improvement.',
     ],
   };
-  const experience2 = {
-    title: 'AI/ML Internship',
-    company: 'Edunet Foundation',
-    images: [eduNet],
-    techStackLogos: [Python,GenAILogo, TensorFlow],
-    startDate: 'Aug 2023',
-    endDate: 'Oct 2023',
-    description: [
-      'Remote Internship and I was tasked with training a model to conduct a sentiment analysis on reviews using Open source Dataset',
-      'Trained model got the accuracy of 76%, which was later improved further using Random forest classifier.',
-    ],
-  };
+  // const experience2 = {
+  //   title: 'AI/ML Internship',
+  //   company: 'Edunet Foundation',
+  //   images: [eduNet],
+  //   techStackLogos: [Python,GenAILogo, TensorFlow],
+  //   startDate: 'Aug 2023',
+  //   endDate: 'Oct 2023',
+  //   description: [
+  //     'Remote Internship and I was tasked with training a model to conduct a sentiment analysis on reviews using Open source Dataset',
+  //     'Trained model got the accuracy of 76%, which was later improved further using Random forest classifier.',
+  //   ],
+  // };
 
-  const experience3= {
-    title: 'Backend Developer',
-    company: 'Doss',
-    images: [],
-    techStackLogos: [Sql,Express,Apis,JavaScript],
-    startDate: 'May 2023',
-    endDate: 'Aug 2023',
-    description: [
-      'Collaborated with the team to optimize the website\'s performance, resulting in a 55% monthly growth.',
-      'Improved server response time by optimizing server-side code and database queries.',
-      'Gained hands-on experience with tech stacks including SQL, Express JS, JavaScript, and APIs.'
-    ],
-  };
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -67,8 +54,8 @@ function WorkExperience({}: Props) {
       <h3 className='absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl'>Experience</h3>
       <div className='w-full flex space-x-5 overflow-x-scroll p-5 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
         <ExperienceCard {...experience1} />
-        <ExperienceCard {...experience2} />
-        <ExperienceCard {...experience3} />
+        {/* <ExperienceCard {...experience2} /> */}
+        
       </div>
     </motion.div>
   );
