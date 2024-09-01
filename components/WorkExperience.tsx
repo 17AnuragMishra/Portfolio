@@ -6,10 +6,13 @@ import eduNet from '../Assets/eduNet.png';
 import Python from '../Assets/pythonLogo.png';
 import TensorFlow from '../Assets/tensorFlow.png';
 import GenAILogo from '../Assets/genLogo.png';
+import { Description, TableChartSharp } from '@mui/icons-material';
 import JavaScript from '../Assets/JavaScript-logo.png';
 import Sql from '../Assets/Sql.jpg';
 import Express from '../Assets/NodeJs.jpg';
 import Apis from '../Assets/Apis.png';
+
+
 
 type Props = {};
 
@@ -40,11 +43,12 @@ function WorkExperience({}: Props) {
       'Trained model got the accuracy of 76%, which was later improved further using Random forest classifier.',
     ],
   };
+
   const experience3= {
     title: 'Backend Developer',
     company: 'Doss',
     images: [],
-    techStackLogos: [Sql, Express, Apis, JavaScript],
+    techStackLogos: [Sql,Express,Apis,JavaScript],
     startDate: 'May 2023',
     endDate: 'Aug 2023',
     description: [
@@ -53,7 +57,6 @@ function WorkExperience({}: Props) {
       'Gained hands-on experience with tech stacks including SQL, Express JS, JavaScript, and APIs.'
     ],
   };
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
