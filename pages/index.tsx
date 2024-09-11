@@ -5,8 +5,8 @@ import Hero from '../components/Hero';
 import WorkExperience from '@/components/WorkExperience';
 const inter = Inter({ subsets: ['latin'] });
 import About from '../components/About';
-import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
+// import Skills from '@/components/Skills';
 import Contact from '@/components/Contact';
 import Link from 'next/link';
 
@@ -26,9 +26,6 @@ export default function Home() {
       </section>
       <section id="experience" className='snap-center'>
         <WorkExperience />
-      </section>
-      <section id='skills' className='snap-start'>
-        <Skills />
       </section>
       <section id='projects' className='snap-start'>
         <Projects />
