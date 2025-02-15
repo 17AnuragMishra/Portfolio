@@ -4,11 +4,11 @@ import ExperienceCard from './ExperienceCard';
 import Sugarcane from '../Assets/sugarcaneAI.jpeg';
 import eduNet from '../Assets/eduNet.png';
 import Python from '../Assets/pythonLogo.png';
-import TensorFlow from '../Assets/tensorFlow.png';
+import IntentJs from '../Assets/image.png';
 import GenAILogo from '../Assets/genLogo.png';
 import { Description, TableChartSharp } from '@mui/icons-material';
 import JavaScript from '../Assets/JavaScript-logo.png';
-import Sql from '../Assets/Sql.jpg';
+import ReactLogo from '../Assets/ReactLogo.png';
 import Express from '../Assets/NodeJs.jpg';
 import Apis from '../Assets/Apis.png';
 
@@ -19,6 +19,19 @@ type Props = {};
 function WorkExperience({}: Props) {
 
   const experience1 = {
+    title: 'Frontend Developer Intern',
+    company: 'Hanalabs(IntentJs)',
+    images: [IntentJs],
+    techStackLogos: [JavaScript, Express, Apis, ReactLogo],
+    startDate: 'Dec 2024',
+    endDate: 'March 2025',
+    description: [
+      'Worked as a Frontend Developer on Ucasty, a SaaS-based streaming and event hosting platform. Built using React, Next.js, Node.js, TypeScript, Docker, MongoDB, and SCSS.',
+      'Contributed to enhancing the application for the first batch of users by improving responsiveness and functionality.',
+      'Made over 150 contributions and gained valuable experience working in a fast-paced project environment.',
+    ],
+  };
+  const experience2 = {
     title: 'Gen AI Intern',
     company: 'Sugarcane AI',
     images: [Sugarcane],
@@ -54,8 +67,7 @@ function WorkExperience({}: Props) {
       <h3 className='absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl'>Experience</h3>
       <div className='w-full flex space-x-5 overflow-x-scroll p-5 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
         <ExperienceCard {...experience1} />
-        {/* <ExperienceCard {...experience2} /> */}
-        
+        <ExperienceCard {...experience2} />
       </div>
     </motion.div>
   );
