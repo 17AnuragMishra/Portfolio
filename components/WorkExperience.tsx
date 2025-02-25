@@ -28,7 +28,7 @@ function WorkExperience({}: Props) {
     description: [
       'Worked as a Frontend Developer on Ucasty, a SaaS-based streaming and event hosting platform. Built using React, Next.js, Node.js, TypeScript, Docker, MongoDB, and SCSS.',
       'Contributed to enhancing the application for the first batch of users by improving responsiveness and functionality.',
-      'Made over 150 contributions and gained valuable experience working in a fast-paced project environment.',
+      'Made over 150 contributions and gained valuable experience working in a fast-paced project environment...',
     ],
   };
   const experience2 = {
